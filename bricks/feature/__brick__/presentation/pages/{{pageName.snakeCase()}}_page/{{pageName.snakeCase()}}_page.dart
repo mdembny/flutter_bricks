@@ -26,10 +26,10 @@ class {{pageName.pascalCase()}}Page extends HookWidget {
 
   bool _buildWhen({{pageName.pascalCase()}}State state) => 
   // TODO: Add/remove conditions 
-    state is {{pageName.pascalCasse()}}InitialState ||
-    state is {{pageName.pascalCasse()}}LoadingState ||
-    state is {{pageName.pascalCasse()}}LoadedState ||
-    state is {{pageName.pascalCasse()}}ErrorState;
+    state is {{pageName.pascalCase()}}InitialState ||
+    state is {{pageName.pascalCase()}}LoadingState ||
+    state is {{pageName.pascalCase()}}LoadedState ||
+    state is {{pageName.pascalCase()}}ErrorState;
 
   void _listener(
     {{pageName.pascalCase()}}Cubit cubit,
