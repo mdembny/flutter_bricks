@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class {{pageName.pascalCase()}}Body extends Widget {
   // TODO: Add fields
 
