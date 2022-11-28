@@ -1,8 +1,11 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 
-@freezed
-class {{pageName.pascalCasse()}}State with _{{pageName.pascalCasse()}}State {
-  const factory {{pageName.pascalCasse()}}State.loading() = {{pageName.pascalCasse()}}LoadingState;
-  const factory {{pageName.pascalCasse()}}State.loaded() = {{pageName.pascalCasse()}}LoadedState;
-  const factory {{pageName.pascalCasse()}}State.error() = {{pageName.pascalCasse()}}ErrorState;
+@injectable
+class {{pageName.pascalCasse()}}Cubit extends Cubit<{{pageName.pascalCasse()}}State> {
+  {{pageName.pascalCasse()}}Cubit(
+    // TODO: Add arguments
+  ): super({{pageName.pascalCasse()}}State.initial());
+
+  // TODO: Add methods
 }

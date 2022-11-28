@@ -10,5 +10,5 @@ abstract class {{featureName.pascalCase()}}DataSource {
   @factoryMethod
   factory {{featureName.pascalCase()}}DataSource(Dio dio) = _{{featureName.pascalCase()}}DataSource;
 
-  #TODO add endpoints to {{featureName.pascalCase()}}DataSource
+  // TODO: Add endpoints
 }

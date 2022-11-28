@@ -4,7 +4,7 @@ part '{{modelName.snakeCase()}}_dto.g.dart';
 
 @JsonSerializable()
 class {{modelName.pascalCase()}}Dto {
-  // TODO: Add fields to {{modelName.pascalCase()}}Dto
+  // TODO: Add fields
 
   const {{modelName.pascalCase()}}Dto (
 

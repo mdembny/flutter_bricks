@@ -1,3 +1,5 @@
+import 'package:injectable/injectable.dart';
+
 @LazySingleton(as: {{featureName.pascalCase()}}Service)
 class {{featureName.pascalCase()}}ServiceImpl implements {{featureName.pascalCase()}}Service {
   final {{featureName.pascalCase()}}DataSource _{{featureName.camelCase()}}DataSource;
@@ -10,5 +12,5 @@ class {{featureName.pascalCase()}}ServiceImpl implements {{featureName.pascalCas
     this._{{modelName.camelCase()}}To{{modelName.pascalCase()}}DtoMapper,
   );
 
-  // TODO add service method
+  // TODO: Add service method
 }  

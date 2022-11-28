@@ -25,13 +25,18 @@ class {{pageName.pascalCase()}}Page extends HookWidget {
   }
 
   bool _buildWhen({{pageName.pascalCase()}}State state) => 
-  // TODO: {{featureName.pascalCase()}}: {{pageName.pascalCase()}}:  Add conditions to _buildWhen
+  // TODO: Add/remove conditions 
+    state is {{pageName.pascalCasse()}}InitialState ||
+    state is {{pageName.pascalCasse()}}LoadingState ||
+    state is {{pageName.pascalCasse()}}LoadedState ||
+    state is {{pageName.pascalCasse()}}ErrorState;
 
   void _listener(
     {{pageName.pascalCase()}}Cubit cubit,
     {{pageName.pascalCase()}}State state,
     BuildContext context,
   ) => state.maybeWhen(
+    // TODO: Add method to handle to other state
     orElse: (){},
   );
 
