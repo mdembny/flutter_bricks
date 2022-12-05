@@ -4,8 +4,8 @@ class {{pageName.pascalCase()}}Body extends Widget {
   // TODO: Add fields
 
   const {{pageName.pascalCase()}}Body(
-    super.key,
     {
+      super.key,
       // TODO: Add fields
     }
   );
